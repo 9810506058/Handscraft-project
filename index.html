@@ -1,11 +1,856 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hello 
-</body>
-</html>
+<!---------- Meta HTML Starts --------->
+<html>
+   <head>
+      <title>Web Site</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+
+
+<div class="width-100 search-panel">
+    <div class="container">
+      <div class="width-20">
+        <img src="images/logo1.png" class="logo">
+      </div>
+      <div class="width-50">
+        <input class="search-textbox" type="text" Placeholder="Search for products, local artist and more">
+        <button class="search-button">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="width-30">
+        <ul class="cart-sect">
+         
+          <li>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <a href="log.html" target="_blank">Login </a>
+          </li>
+          <li>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <a href="register.html"target="_blank">Signup </a>
+          </li>
+          <li>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <a href="#">Cart (0)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!---------- Logo and Search Panel HTML Code Ends --------->
+
+
+  <!-- Product-Section HTML Code STARTS -->
+<div class="width-100 margin-top-50">
+    <div class="container">
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+                <span class="minusJ">-</span>
+                <span class="numJ">0</span>
+                <span class="plusJ">+</span>
+            </div>
+            <script>
+                const plusJ = document.querySelector(".plusJ");
+                const minusJ = document.querySelector(".minusJ");
+                const numJ = document.querySelector(".numJ");
+        
+                let J = 0;
+        
+                plusJ.addEventListener("click", () => {
+                    J++;
+                    numJ.innerText = J;
+                });
+        
+                minusJ.addEventListener("click", () => {
+                    J--;
+                    J = (J < 0) ? 0 : J;
+                    numJ.innerText = J;
+                });
+            </script>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusJk">-</span>
+              <span class="numJk">0</span>
+              <span class="plusJk">+</span>
+          </div>
+          <script>
+              const plusJk = document.querySelector(".plusJk");
+              const minusJk = document.querySelector(".minusJk");
+              const numJk = document.querySelector(".numJk");
+          
+              let Jk = 0;
+          
+              plusJk.addEventListener("click", () => {
+                  Jk++;
+                  numJk.innerText = Jk;
+              });
+          
+              minusJk.addEventListener("click", () => {
+                  Jk--;
+                  Jk = (Jk < 0) ? 0 : Jk;
+                  numJk.innerText = Jk;
+              });
+          </script>
+          
+        </div>
+          </div>
+        </div>
+      </div>
+       <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusa">-</span>
+              <span class="numa">0</span>
+              <span class="plusa">+</span>
+          </div>
+          <script>
+              const plusa = document.querySelector(".plusa");
+              const minusa = document.querySelector(".minusa");
+              const numa = document.querySelector(".numa");
+          
+              let a = 0;
+          
+              plusa.addEventListener("click", () => {
+                  a++;
+                  numa.innerText = a;
+              });
+          
+              minusa.addEventListener("click", () => {
+                  a--;
+                  a = (a < 0) ? 0 : a;
+                  numa.innerText = a;
+              });
+          </script>
+           
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusb">-</span>
+              <span class="numb">0</span>
+              <span class="plusb">+</span>
+          </div>
+          <script>
+              const plusb = document.querySelector(".plusb");
+              const minusb = document.querySelector(".minusb");
+              const numb = document.querySelector(".numb");
+          
+              let b = 0;
+          
+              plusb.addEventListener("click", () => {
+                  b++;
+                  numb.innerText = b;
+              });
+          
+              minusb.addEventListener("click", () => {
+                  b--;
+                  b = (b < 0) ? 0 : b;
+                  numb.innerText = b;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusc">-</span>
+              <span class="numc">0</span>
+              <span class="plusc">+</span>
+          </div>
+          <script>
+              const plusc = document.querySelector(".plusc");
+              const minusc = document.querySelector(".minusc");
+              const numc = document.querySelector(".numc");
+          
+              let c = 0;
+          
+              plusc.addEventListener("click", () => {
+                  c++;
+                  numc.innerText = c;
+              });
+          
+              minusc.addEventListener("click", () => {
+                  c--;
+                  c = (c < 0) ? 0 : c;
+                  numc.innerText = c;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minuse">-</span>
+              <span class="nume">0</span>
+              <span class="pluse">+</span>
+          </div>
+          <script>
+              const pluse = document.querySelector(".pluse");
+              const minuse = document.querySelector(".minuse");
+              const nume = document.querySelector(".nume");
+          
+              let e = 0;
+          
+              pluse.addEventListener("click", () => {
+                  e++;
+                  nume.innerText = e;
+              });
+          
+              minuse.addEventListener("click", () => {
+                  e--;
+                  e = (e < 0) ? 0 : e;
+                  nume.innerText = e;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusf">-</span>
+              <span class="numf">0</span>
+              <span class="plusf">+</span>
+          </div>
+          <script>
+              const plusf = document.querySelector(".plusf");
+              const minusf = document.querySelector(".minusf");
+              const numf = document.querySelector(".numf");
+          
+              let f = 0;
+          
+              plusf.addEventListener("click", () => {
+                  f++;
+                  numf.innerText = f;
+              });
+          
+              minusf.addEventListener("click", () => {
+                  f--;
+                  f = (f < 0) ? 0 : f;
+                  numf.innerText = f;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusg">-</span>
+              <span class="numg">0</span>
+              <span class="plusg">+</span>
+          </div>
+          <script>
+              const plusg = document.querySelector(".plusg");
+              const minusg = document.querySelector(".minusg");
+              const numg = document.querySelector(".numg");
+          
+              let g = 0;
+          
+              plusg.addEventListener("click", () => {
+                  g++;
+                  numg.innerText = g;
+              });
+          
+              minusg.addEventListener("click", () => {
+                  g--;
+                  g = (g < 0) ? 0 : g;
+                  numg.innerText = g;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minush">-</span>
+              <span class="numh">0</span>
+              <span class="plush">+</span>
+          </div>
+          <script>
+              const plush = document.querySelector(".plush");
+              const minush = document.querySelector(".minush");
+              const numh = document.querySelector(".numh");
+          
+              let h = 0;
+          
+              plush.addEventListener("click", () => {
+                  h++;
+                  numh.innerText = h;
+              });
+          
+              minush.addEventListener("click", () => {
+                  h--;
+                  h = (h < 0) ? 0 : h;
+                  numh.innerText = h;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusi">-</span>
+              <span class="numi">0</span>
+              <span class="plusi">+</span>
+          </div>
+          <script>
+              const plusi = document.querySelector(".plusi");
+              const minusi = document.querySelector(".minusi");
+              const numi = document.querySelector(".numi");
+          
+              let i = 0;
+          
+              plusi.addEventListener("click", () => {
+                  i++;
+                  numi.innerText = i;
+              });
+          
+              minusi.addEventListener("click", () => {
+                  i--;
+                  i = (i < 0) ? 0 : i;
+                  numi.innerText = i;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusk">-</span>
+              <span class="numk">0</span>
+              <span class="plusk">+</span>
+          </div>
+          <script>
+              const plusk = document.querySelector(".plusk");
+              const minusk = document.querySelector(".minusk");
+              const numk = document.querySelector(".numk");
+          
+              let k = 0;
+          
+              plusk.addEventListener("click", () => {
+                  k++;
+                  numk.innerText = k;
+              });
+          
+              minusk.addEventListener("click", () => {
+                  k--;
+                  k = (k < 0) ? 0 : k;
+                  numk.innerText = k;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusl">-</span>
+              <span class="numl">0</span>
+              <span class="plusl">+</span>
+          </div>
+          <script>
+              const plusl = document.querySelector(".plusl");
+              const minusl = document.querySelector(".minusl");
+              const numl = document.querySelector(".numl");
+          
+              let l = 0;
+          
+              plusl.addEventListener("click", () => {
+                  l++;
+                  numl.innerText = l;
+              });
+          
+              minusl.addEventListener("click", () => {
+                  l--;
+                  l = (l < 0) ? 0 : l;
+                  numl.innerText = l;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusm">-</span>
+              <span class="numm">0</span>
+              <span class="plusm">+</span>
+          </div>
+          <script>
+              const plusm = document.querySelector(".plusm");
+              const minusm = document.querySelector(".minusm");
+              const numm = document.querySelector(".numm");
+          
+              let m = 0;
+          
+              plusm.addEventListener("click", () => {
+                  m++;
+                  numm.innerText = m;
+              });
+          
+              minusm.addEventListener("click", () => {
+                  m--;
+                  m = (m < 0) ? 0 : m;
+                  numm.innerText = m;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusn">-</span>
+              <span class="numn">0</span>
+              <span class="plusn">+</span>
+          </div>
+          <script>
+              const plusn = document.querySelector(".plusn");
+              const minusn = document.querySelector(".minusn");
+              const numn = document.querySelector(".numn");
+          
+              let n = 0;
+          
+              plusn.addEventListener("click", () => {
+                  n++;
+                  numn.innerText = n;
+              });
+          
+              minusn.addEventListener("click", () => {
+                  n--;
+                  n = (n < 0) ? 0 : n;
+                  numn.innerText = n;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minuso">-</span>
+              <span class="numo">0</span>
+              <span class="pluso">+</span>
+          </div>
+          <script>
+              const pluso = document.querySelector(".pluso");
+              const minuso = document.querySelector(".minuso");
+              const numo = document.querySelector(".numo");
+          
+              let o = 0;
+          
+              pluso.addEventListener("click", () => {
+                  o++;
+                  numo.innerText = o;
+              });
+          
+              minuso.addEventListener("click", () => {
+                  o--;
+                  o = (o < 0) ? 0 : o;
+                  numo.innerText = o;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div><div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="images/product1.jpg">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">pencil cup diy</a>
+              </p>
+               
+              </p>
+              <p class="product-price">
+                <span class="product-discounted-price">Rs.549.00</span>
+                <span class="product-original-price">Rs.554</span>
+                <span class="product-discount">90% OFF</span>
+            </p>
+            <div class="wrapper">
+              <span class="minusp">-</span>
+              <span class="nump">0</span>
+              <span class="plusp">+</span>
+          </div>
+          <script>
+              const plusp = document.querySelector(".plusp");
+              const minusp = document.querySelector(".minusp");
+              const nump = document.querySelector(".nump");
+          
+              let p = 0;
+          
+              plusp.addEventListener("click", () => {
+                  p++;
+                  nump.innerText = p;
+              });
+          
+              minusp.addEventListener("click", () => {
+                  p--;
+                  p = (p < 0) ? 0 : p;
+                  nump.innerText = p;
+              });
+          </script>
+          
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+ 
+  <!---------- Featured-Section HTML Code Ends --------->
+  <!-- Footer-Section HTML Code STARTS -->
+<div class="width-100 margin-top-50 footer">
+    <div class="container">
+      <div class="width-25">
+        <h2 class="quicklink-heading">Account Detail</h2>
+        <ul class="quicklink-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Checkout</a></li>
+        </ul>
+      </div>
+      <div class="width-25">
+        <h2 class="quicklink-heading">Useful Link</h2>
+        <ul class="quicklink-menu">
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">Change Password</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">My Cashback</a></li>
+        </ul>
+      </div>
+      <div class="width-25">
+        <h2 class="quicklink-heading"> Links</h2>
+        <ul class="quicklink-menu">
+          <li><a href="log.html">Login</a></li>
+          <li><a href="#">FAQS</a></li>
+          <li><a href="#">Contact us</a></li>
+      
+        
+        </ul>
+      </div>
+      <div class="width-25">
+        <h2 class="quicklink-heading">GET IN TOUCH</h2>
+        <ul class="get-in-touch">
+          <li><i class="fa fa-envelope-o" aria-hidden="true"></i> E-MAIL:<a href="#" class="footer-e-mail"> Handscraftartistry.com</a></li>
+          <li><i class="fa fa-fax" aria-hidden="true"></i> CONTACT NO.: 9810506058</li>
+     
+        </ul>
+        <ul class="social-media">
+          <li><a href="#"><img src="images/facebook.png"></a></li>
+        
+          <li><a href="#"><img src="images/instagram.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!---------- Footer-Section HTML Code Ends --------->
+  <!-- Footer-bottom Section HTML Code STARTS -->
+<div class="width-100 footer2-bacbor">
+    <p class="footer2-content">Copyright Â© 2024, Handscraft Artistry.com. All Rights Reserved</p>
+  </div>
+  <!---------- Footer-bottom Section HTML Code Ends --------->
+
+

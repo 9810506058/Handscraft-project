@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Signin Form</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login Window</h2>
+            <form action="sign.php" method="POST">
+                <input class="input-box" type="email" name="email" placeholder="Your Email Address" required>
+                <input class="input-box" type="password" name="password" placeholder="Your Password" required>
+                <label class="text-color-white">
+                    <input type="checkbox" required>
+                    Agree with <a href="#" class="text-color-white">Terms & Condition</a>
+                </label>
+                <button class="login-btn" type="submit" name="login">Login</button>
+                <button class="secondary-btn"><a href="register.html" class="text-color-white text-decoration-none secondary-btn">Register</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
